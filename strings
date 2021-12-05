@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+	// Complete the program
+    string str1,str2,str3;
+    int str1len, str2len;
+    char a,b;
+     
+    cin>>str1;
+      cin>>str2;
+    str1len=str1.size();
+    str2len=str2.size();
+     
+    cout<<str1len;
+    cout<<" "<<str2len;
+
+    str3=str1+str2;
+    cout<<"\n"<<str3;
+     // a' b'
+    a = str2[0];
+    b = str1[0];        
+    str1[0] = a;
+    str2[0] = b;
+    cout<<"\n";
+    cout<<str1;
+    cout<<" "<<str2;
+     
+     
+    return 0;
+}
